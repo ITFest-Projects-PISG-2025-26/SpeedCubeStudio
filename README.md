@@ -1,37 +1,39 @@
-# 🧩 SpeedCubeStudio
+# 🧠 SpeedCubeStudio
 
-SpeedCubeStudio is a full-featured Rubik's Cube training and analytics app designed for cubers of all skill levels. It includes timers, stats, 3D cube simulation, and smart scramble features.
+A smart, interactive Rubik's Cube trainer & timer built with React + TypeScript + Vite.  
+Track solve times, get smart scrambles, view statistics, and much more — built for cubers, by cubers.
 
-![Screenshot](./screenshot.png)
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Build with Vite](https://img.shields.io/badge/built%20with-Vite-646CFF.svg)
+[![Deploy to Render](https://img.shields.io/badge/render-live--demo-brightgreen)](https://speedcubestudio.onrender.com)
 
 ---
 
 ## 🚀 Features
 
-- ⏱️ Accurate cube timer with inspection and penalties
-- 📊 Solve history, Ao5 / Ao12 / Ao50 / Ao100 stats
-- 📈 Graph view of solve times
-- 🧠 Smart scramble (from webcam or manual)
-- 🧩 3D cube visualizer
-- 🧑‍🤝‍🧑 Multiplayer challenge mode
-- 🗣️ Voice instruction and feedback
-- 🌙 Dark/Light mode toggle
-- ⬆️ Import / Export solves (CSV or JSON)
-- ❌ Delete / Filter DNF and +2 solves
+- 🎯 Smart scramble generation
+- ⏱️ Timer with inspection, +2/DNF handling
+- 📊 Solve history & advanced statistics (Ao5, Ao12, Ao50, Ao100)
+- 📈 Graph of performance over time
+- 📥 Import/export solve data
+- 🔊 Voice instructions
+- 🌗 Dark/light mode toggle
+- 🔄 3D cube visualization (coming soon)
+- 🧩 Multiplayer (coming soon)
 
 ---
 
-## 💻 Getting Started (Local Development)
+## 📦 Installation
 
-### Prerequisites
-
-- Node.js v18+ and npm
-- Git
-
-### Installation
+> Make sure Node.js and npm are installed.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/SpeedCubeStudio.git
+# Clone the repo
+git clone https://github.com/ITFest-Projects-PISG-2025-26/SpeedCubeStudio.git
 cd SpeedCubeStudio
+
+# Install dependencies
 npm install
+
+# Start development server
 npm run dev
