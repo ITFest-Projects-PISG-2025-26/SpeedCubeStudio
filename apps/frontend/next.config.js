@@ -6,11 +6,6 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  // Disable all static optimizations to prevent SSR issues
-  experimental: {
-    runtime: 'nodejs',
-    serverComponentsExternalPackages: [],
-  },
   // Skip build-time optimizations that cause SSR errors
   onDemandEntries: {
     maxInactiveAge: 25 * 1000,

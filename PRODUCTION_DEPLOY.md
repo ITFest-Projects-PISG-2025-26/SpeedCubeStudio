@@ -125,7 +125,10 @@ SKIP_BUILD_STATIC_GENERATION=true
    - Check that all dependencies are properly installed
    - Verify the build commands are correct
    - Check build logs for specific errors
-   - **TypeScript errors**: Ensure all types are properly imported (common issue with Prisma types)
+   - **TypeScript errors**: 
+     - Ensure `typescript`, `@types/react`, and `@types/node` are in dependencies (not devDependencies)
+     - Common error: "do not have the required package(s) installed" means TypeScript deps are missing
+     - Ensure all types are properly imported (common issue with Prisma types)
    - **Turbo not found**: If using monorepo, ensure turbo is in dependencies (not devDependencies)
    - **Alternative**: Use direct build commands instead of turbo for production
    - **Import/Export issues**: Ensure components use correct import syntax (named vs default exports)
@@ -141,20 +144,20 @@ SKIP_BUILD_STATIC_GENERATION=true
    - The build creates necessary server files in .next/server/
    - App will work correctly when deployed and running server-side
 
-2. **Database Connection Issues**
+3. **Database Connection Issues**
    - Verify DATABASE_URL is correctly formatted
    - Ensure database service is running
    - Check if database migrations were applied
 
-3. **CORS Errors**
+4. **CORS Errors**
    - Verify FRONTEND_URL is set correctly in backend
    - Ensure frontend is trying to connect to correct backend URL
 
-4. **Socket Connection Issues**
+5. **Socket Connection Issues**
    - Verify NEXT_PUBLIC_SOCKET_URL matches your backend URL
    - Check if WebSocket connections are allowed
 
-5. **Dependency Issues**
+6. **Dependency Issues**
    - Run `npm audit fix` to address security vulnerabilities
    - Ensure all workspace dependencies are correctly installed
 
