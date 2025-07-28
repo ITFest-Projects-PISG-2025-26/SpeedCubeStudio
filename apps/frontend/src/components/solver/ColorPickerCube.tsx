@@ -1,6 +1,6 @@
 // apps/frontend/src/components/solver/ColorPickerCube.tsx
 import React, { useState } from "react";
-import { cubeColors } from "@/utils/colors";
+import { cubeColors } from "../../utils/colors";
 
 type Face = "U" | "D" | "F" | "B" | "L" | "R";
 type CubeState = Record<Face, string[][]>;
