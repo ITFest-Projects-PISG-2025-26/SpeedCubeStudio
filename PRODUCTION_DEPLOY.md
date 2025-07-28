@@ -104,6 +104,7 @@ Click the button below to deploy both services at once:
    - Check that all dependencies are properly installed
    - Verify the build commands are correct
    - Check build logs for specific errors
+   - **TypeScript errors**: Ensure all types are properly imported (common issue with Prisma types)
 
 2. **Database Connection Issues**
    - Verify DATABASE_URL is correctly formatted
@@ -117,6 +118,10 @@ Click the button below to deploy both services at once:
 4. **Socket Connection Issues**
    - Verify NEXT_PUBLIC_SOCKET_URL matches your backend URL
    - Check if WebSocket connections are allowed
+
+5. **Dependency Issues**
+   - Run `npm audit fix` to address security vulnerabilities
+   - Ensure all workspace dependencies are correctly installed
 
 #### Checking Logs:
 - Go to your service in Render dashboard
@@ -161,6 +166,28 @@ When you're ready to scale:
 - Consider Redis for session storage
 - Implement database connection pooling
 - Add load balancing if needed
+
+### Render-Specific Tips
+
+1. **Build Process**:
+   - Render uses Node.js 22.16.0 by default
+   - Build timeout is 15 minutes for free tier
+   - Use `npm ci` instead of `npm install` for faster builds
+
+2. **Environment Variables**:
+   - Set all required environment variables before first deploy
+   - Use Render's secret management for sensitive data
+   - Environment variables are available during build and runtime
+
+3. **Health Checks**:
+   - Backend includes `/api/health` endpoint
+   - Render automatically monitors service health
+   - Services restart automatically if they become unresponsive
+
+4. **Logs and Debugging**:
+   - Access real-time logs in Render dashboard
+   - Use `console.log` for debugging (remove in production)
+   - Set up log retention for production apps
 
 ---
 
