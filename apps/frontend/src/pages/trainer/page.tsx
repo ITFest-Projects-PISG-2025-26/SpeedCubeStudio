@@ -4,7 +4,7 @@ import React from "react";
 import CaseImage from "@/components/trainer/CaseImage";
 import TrainerFilters from "@/components/trainer/TrainerFilters";
 import VoiceToggle from "@/components/trainer/VoiceToggle";
-import Header from "@/components/Header";
+import { Header } from "@/components/Header";
 
 export default function TrainerPage() {
   return (

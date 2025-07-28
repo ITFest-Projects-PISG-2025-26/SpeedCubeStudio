@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Header from "@/components/Header";
+import { Header } from "@/components/Header";
 import ColorPickerCube from "@/components/solver/ColorPickerCube";
 import MoveBreakdown from "@/components/solver/MoveBreakdown";
 import Cube3DViewer from "@/components/solver/Cube3DViewer";

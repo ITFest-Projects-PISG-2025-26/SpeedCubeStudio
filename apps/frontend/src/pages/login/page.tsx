@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { loginUser } from "@/utils/auth";
-import Header from "@/components/Header";
+import { Header } from "@/components/Header";
 
 export default function LoginPage() {
   const router = useRouter();

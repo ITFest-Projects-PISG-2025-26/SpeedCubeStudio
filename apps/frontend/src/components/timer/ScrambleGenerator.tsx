@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { generateScramble } from '@/lib/scrambleUtils';
+import { generateScramble } from '@/utils/scrambleGenerator';
 
 interface ScrambleGeneratorProps {
   onNewScramble?: (scramble: string) => void;

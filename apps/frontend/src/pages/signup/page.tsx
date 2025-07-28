@@ -3,16 +3,17 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { registerUser } from "@/utils/auth";
-import Header from "@/components/Header";
+import { Header } from "@/components/Header";
 
 export default function SignupPage() {
   const router = useRouter();
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const success = await registerUser(email, password);
+    const success = await registerUser(name, email, password);
     if (success) {
       router.push("/");
     } else {
@@ -25,6 +26,14 @@ export default function SignupPage() {
       <Header />
       <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-80 p-4 border rounded-xl shadow bg-card">
         <h2 className="text-xl font-semibold text-center">Sign Up</h2>
+        <input
+          type="text"
+          placeholder="Name"
+          value={name}
+          onChange={e => setName(e.target.value)}
+          className="p-2 border rounded"
+          required
+        />
         <input
           type="email"
           placeholder="Email"

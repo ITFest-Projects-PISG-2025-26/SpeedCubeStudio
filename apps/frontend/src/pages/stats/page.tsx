@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Header from "@/components/Header";
+import { Header } from "@/components/Header";
 import StatCard from "@/components/stats/StatCard";
 import Graph from "@/components/stats/Graph";
 
