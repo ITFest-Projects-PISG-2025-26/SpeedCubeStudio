@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient, Solve } from '@prisma/client';
 import { calculateStats } from '../utils/stats';
 
 interface AuthenticatedRequest extends Request {
@@ -17,7 +17,7 @@ export const getStats = async (req: AuthenticatedRequest, res: Response) => {
       orderBy: { createdAt: 'desc' },
     });
 
-    const stats = calculateStats(solves.map(s => s.time));
+    const stats = calculateStats(solves.map((s: Solve) => s.time));
     res.status(200).json(stats);
   } catch (err) {
     res.status(500).json({ message: 'Error calculating stats' });
