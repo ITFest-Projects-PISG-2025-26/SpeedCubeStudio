@@ -1,0 +1,30 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="32" fill="#3B82F6"/>
+  
+  <!-- Cube face 1 -->
+  <rect x="120" y="120" width="120" height="120" fill="#FFFFFF" stroke="#1E40AF" stroke-width="4"/>
+  <rect x="130" y="130" width="33.33" height="33.33" fill="#EF4444"/>
+  <rect x="163.33" y="130" width="33.33" height="33.33" fill="#F97316"/>
+  <rect x="196.67" y="130" width="33.33" height="33.33" fill="#10B981"/>
+  <rect x="130" y="163.33" width="33.33" height="33.33" fill="#FBBF24"/>
+  <rect x="163.33" y="163.33" width="33.33" height="33.33" fill="#FFFFFF"/>
+  <rect x="196.67" y="163.33" width="33.33" height="33.33" fill="#8B5CF6"/>
+  <rect x="130" y="196.67" width="33.33" height="33.33" fill="#EC4899"/>
+  <rect x="163.33" y="196.67" width="33.33" height="33.33" fill="#06B6D4"/>
+  <rect x="196.67" y="196.67" width="33.33" height="33.33" fill="#84CC16"/>
+  
+  <!-- Cube face 2 (right side) -->
+  <polygon points="240,120 360,120 390,150 270,150" fill="#E5E7EB" stroke="#1E40AF" stroke-width="3"/>
+  <polygon points="240,240 360,240 390,270 270,270" fill="#E5E7EB" stroke="#1E40AF" stroke-width="3"/>
+  
+  <!-- Cube face 3 (top side) -->
+  <polygon points="120,120 240,120 270,90 150,90" fill="#F3F4F6" stroke="#1E40AF" stroke-width="3"/>
+  <polygon points="240,120 360,120 390,90 270,90" fill="#F3F4F6" stroke="#1E40AF" stroke-width="3"/>
+  
+  <!-- Timer Display -->
+  <rect x="80" y="320" width="352" height="80" rx="12" fill="#1F2937"/>
+  <text x="256" y="370" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="36" font-weight="bold">12.34</text>
+  
+  <!-- SpeedCube Studio Text -->
+  <text x="256" y="460" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24" font-weight="bold">SpeedCube Studio</text>
+</svg>
