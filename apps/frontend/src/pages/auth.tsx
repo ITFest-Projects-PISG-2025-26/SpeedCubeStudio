@@ -4,8 +4,9 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { authAPI } from '../lib/api';
 import { useAuthStore } from '../lib/store';
+import ClientOnly from '../components/ClientOnly';
 
-export default function LoginPage() {
+function AuthPageContent() {
   const [isLogin, setIsLogin] = useState(true);
   const [formData, setFormData] = useState({
     name: '',
@@ -122,4 +123,19 @@ export default function LoginPage() {
       </div>
     </div>
   );
+}
+
+export default function AuthPage() {
+  return (
+    <ClientOnly fallback={<div className="min-h-screen flex items-center justify-center"><div>Loading...</div></div>}>
+      <AuthPageContent />
+    </ClientOnly>
+  );
+}
+
+// Force server-side rendering to avoid static generation errors
+export async function getServerSideProps() {
+  return {
+    props: {},
+  };
 }
