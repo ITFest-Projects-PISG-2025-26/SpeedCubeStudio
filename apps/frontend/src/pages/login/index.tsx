@@ -1,7 +1,5 @@
-"use client";
-
 import React, { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 import { loginUser } from "../../utils/auth";
 import { Header } from "../../components/Header";
 
@@ -47,4 +45,11 @@ export default function LoginPage() {
       </form>
     </div>
   );
+}
+
+// Disable static optimization for this page
+export async function getServerSideProps() {
+  return {
+    props: {},
+  };
 }

@@ -1,7 +1,5 @@
-'use client';
-
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/router';
 import { authAPI } from '../lib/api';
 import { useAuthStore } from '../lib/store';
 import ClientOnly from '../components/ClientOnly';
@@ -131,4 +129,11 @@ export default function AuthPage() {
       <AuthPageContent />
     </ClientOnly>
   );
+}
+
+// Disable static optimization for this page
+export async function getServerSideProps() {
+  return {
+    props: {},
+  };
 }

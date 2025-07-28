@@ -1,9 +1,7 @@
-"use client";
-
 import React from "react";
-import { Header } from "@/components/Header";
-import StatCard from "@/components/stats/StatCard";
-import Graph from "@/components/stats/Graph";
+import { Header } from "../../components/Header";
+import StatCard from "../../components/stats/StatCard";
+import Graph from "../../components/stats/Graph";
 
 export default function StatsPage() {
   return (
@@ -21,4 +19,11 @@ export default function StatsPage() {
       </main>
     </div>
   );
+}
+
+// Disable static optimization for this page
+export async function getServerSideProps() {
+  return {
+    props: {},
+  };
 }

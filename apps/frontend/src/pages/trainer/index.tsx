@@ -1,10 +1,8 @@
-"use client";
-
 import React from "react";
-import CaseImage from "@/components/trainer/CaseImage";
-import TrainerFilters from "@/components/trainer/TrainerFilters";
-import VoiceToggle from "@/components/trainer/VoiceToggle";
-import { Header } from "@/components/Header";
+import CaseImage from "../../components/trainer/CaseImage";
+import TrainerFilters from "../../components/trainer/TrainerFilters";
+import VoiceToggle from "../../components/trainer/VoiceToggle";
+import { Header } from "../../components/Header";
 
 export default function TrainerPage() {
   return (
@@ -19,4 +17,11 @@ export default function TrainerPage() {
       </main>
     </div>
   );
+}
+
+// Disable static optimization for this page
+export async function getServerSideProps() {
+  return {
+    props: {},
+  };
 }
