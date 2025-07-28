@@ -11,7 +11,7 @@ class SocketService {
       this.socket.disconnect();
     }
 
-    this.socket = io(process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000', {
+    this.socket = io(process.env.NEXT_PUBLIC_SOCKET_URL || 'http://localhost:4000', {
       auth: {
         token: token
       },
