@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import dynamic from 'next/dynamic';
 import { Header } from "../components/Header";
 
@@ -8,6 +8,20 @@ const ScrambleGenerator = dynamic(() => import("../components/timer/ScrambleGene
 const SolveControls = dynamic(() => import("../components/timer/SolveControls").then(m => ({ default: m.SolveControls })), { ssr: false });
 
 export default function HomePage() {
+  const [currentTime, setCurrentTime] = useState(0);
+  const [isTimerRunning, setIsTimerRunning] = useState(false);
+  const [scramble, setScramble] = useState("");
+
+  const handleTimerUpdate = (time: number, running: boolean) => {
+    setCurrentTime(time);
+    setIsTimerRunning(running);
+  };
+
+  const handleSolveEnd = (time: number) => {
+    console.log('Solve completed in:', time, 'ms');
+    // Here you could save the solve to the database
+  };
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
@@ -16,9 +30,18 @@ export default function HomePage() {
           <h1 className="text-4xl font-bold mb-4">SpeedCube Studio</h1>
           <p className="text-lg text-gray-600">Welcome to your cubing practice platform</p>
         </div>
-        <ScrambleGenerator onNewScramble={(scramble) => console.log(scramble)} />
-        <TimerDisplay time={0} isRunning={false} />
-        <SolveControls onSolveEnd={(time) => console.log('Solve time:', time)} />
+        <ScrambleGenerator onNewScramble={setScramble} />
+        {scramble && (
+          <div className="text-center p-4 bg-card rounded-lg">
+            <p className="text-sm text-gray-600 mb-2">Current Scramble:</p>
+            <p className="text-lg font-mono">{scramble}</p>
+          </div>
+        )}
+        <TimerDisplay time={currentTime} isRunning={isTimerRunning} />
+        <SolveControls 
+          onSolveEnd={handleSolveEnd}
+          onTimerUpdate={handleTimerUpdate}
+        />
       </main>
     </div>
   );
