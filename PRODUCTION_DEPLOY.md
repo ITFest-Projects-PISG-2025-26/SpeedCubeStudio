@@ -136,6 +136,10 @@ SKIP_BUILD_STATIC_GENERATION=true
    - **Component props**: Ensure all required component props are provided
    - **React Context/SSR errors**: Components using hooks may cause prerender failures but the build still succeeds
    - **"Export encountered errors" message**: This is often non-critical for SSR apps - check if .next directory was created
+   - **Missing react-is dependency**: If you see "Can't resolve 'react-is'" for recharts module:
+     - Ensure `"react-is": "^18.2.0"` is in dependencies (not devDependencies)
+     - This is required for recharts 3.x compatibility
+     - Try rebuilding if dependency exists but error persists
 
 2. **Static Generation Errors (Non-Critical)**
    - If you see "Cannot read properties of null (reading 'useContext')" during build
