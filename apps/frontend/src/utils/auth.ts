@@ -37,14 +37,12 @@ export async function loginUser(email: string, password: string): Promise<{ succ
 
 export async function registerUser(name: string, email: string, password: string): Promise<{ success: boolean; error?: string }> {
   try {
-    console.log('Attempting registration with:', { name, email, username: email });
     const response = await authAPI.signup({ 
       name, 
       email, 
       username: email, // Using email as username for simplicity
       password 
     });
-    console.log('Registration response:', response);
     const { token, user } = response.data;
     
     if (token) {
@@ -58,7 +56,6 @@ export async function registerUser(name: string, email: string, password: string
     return { success: false, error: 'No token received from server' };
   } catch (error: any) {
     console.error('Registration error:', error);
-    console.error('Error response:', error.response);
     
     let errorMessage = 'Registration failed. Please try again.';
     
