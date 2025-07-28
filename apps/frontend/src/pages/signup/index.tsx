@@ -17,13 +17,13 @@ export default function SignupPage() {
     setError("");
     
     try {
-      const success = await registerUser(name, email, password);
-      if (success) {
+      const result = await registerUser(name, email, password);
+      if (result.success) {
         // Trigger a storage event to update Header authentication state
         window.dispatchEvent(new Event('storage'));
         router.push("/");
       } else {
-        setError("Registration failed. Please try again.");
+        setError(result.error || "Registration failed. Please try again.");
       }
     } catch (err) {
       setError("Registration failed. Please try again.");

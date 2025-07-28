@@ -16,13 +16,13 @@ export default function LoginPage() {
     setError("");
     
     try {
-      const success = await loginUser(email, password);
-      if (success) {
+      const result = await loginUser(email, password);
+      if (result.success) {
         // Trigger a storage event to update Header authentication state
         window.dispatchEvent(new Event('storage'));
         router.push("/");
       } else {
-        setError("Invalid email or password");
+        setError(result.error || "Invalid email or password");
       }
     } catch (err) {
       setError("Login failed. Please try again.");
