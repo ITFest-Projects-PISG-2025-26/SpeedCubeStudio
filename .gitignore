@@ -1,14 +1,6 @@
-# dependencies
-/node_modules
 
-# builds
-/dist
-
-# misc
+node_modules
+dist
 .env
-.DS_Store
-
-# IDEs
-.vscode
-.idea
 *.log
+backend/solves.json

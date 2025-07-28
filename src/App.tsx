@@ -1,44 +1,66 @@
-import React, { useState } from "react";
-import Timer from "./components/Timer";
-import ScrambleGenerator from "./components/ScrambleGenerator";
-import SolveHistory from "./components/SolveHistory";
-import Stats from "./components/Stats";
-import ImportExport from "./components/ImportExport";
-import Cube3DViewer from "./components/Cube3DViewer";
-import VoiceScramble from "./components/VoiceScramble";
-import QuizMode from "./components/QuizMode";
-import Multiplayer from "./components/Multiplayer";
 
-const App: React.FC = () => {
-  const [view, setView] = useState("home");
+import React, { useEffect, useState } from 'react';
+import './App.css';
+
+type Stats = {
+  best: number;
+  ao5: number;
+  ao12: number;
+  totalSolves: number;
+};
+
+const App = () => {
+  const [scramble, setScramble] = useState('');
+  const [stats, setStats] = useState<Stats | null>(null);
+
+  const fetchScramble = async () => {
+    const res = await fetch('/api/scramble');
+    const data = await res.json();
+    setScramble(data.scramble);
+  };
+
+  const fetchStats = async () => {
+    const res = await fetch('/api/stats');
+    const data = await res.json();
+    setStats(data);
+  };
+
+  const submitSolve = async () => {
+    const res = await fetch('/api/solves', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        time: Math.random() * 20 + 5,
+        penalty: '',
+        date: new Date().toISOString()
+      })
+    });
+    if (res.ok) {
+      fetchStats();
+    }
+  };
+
+  useEffect(() => {
+    fetchScramble();
+    fetchStats();
+  }, []);
 
   return (
-    <div className="min-h-screen p-4 flex flex-col gap-4 items-center">
-      <nav className="flex gap-2 flex-wrap justify-center">
-        {["home", "stats", "history", "quiz", "import", "multiplayer"].map((v) => (
-          <button
-            key={v}
-            onClick={() => setView(v)}
-            className="px-3 py-1 rounded bg-blue-600 hover:bg-blue-700"
-          >
-            {v.charAt(0).toUpperCase() + v.slice(1)}
-          </button>
-        ))}
-      </nav>
+    <div>
+      <h1>🧩 SpeedCubeStudio</h1>
+      <p><strong>Scramble:</strong> {scramble}</p>
+      <button onClick={fetchScramble}>New Scramble</button>
+      <button onClick={submitSolve}>Simulate Solve</button>
 
-      {view === "home" && (
-        <>
-          <ScrambleGenerator />
-          <VoiceScramble />
-          <Timer />
-          <Cube3DViewer />
-        </>
+      <h2>📊 Stats</h2>
+      {stats && (
+        <ul>
+          <li>Best Time: {stats.best}</li>
+          <li>Average of 5: {stats.ao5}</li>
+          <li>Average of 12: {stats.ao12}</li>
+          <li>Total Solves: {stats.totalSolves}</li>
+        </ul>
       )}
-      {view === "stats" && <Stats />}
-      {view === "history" && <SolveHistory />}
-      {view === "quiz" && <QuizMode />}
-      {view === "import" && <ImportExport />}
-      {view === "multiplayer" && <Multiplayer />}
     </div>
   );
 };
