@@ -123,6 +123,8 @@ npm install && cd apps/frontend && npm install && npm run build
    - **Alternative**: Use direct build commands instead of turbo for production
    - **Import/Export issues**: Ensure components use correct import syntax (named vs default exports)
    - **Missing utilities**: Create mock implementations for missing utility files during build
+   - **Component props**: Ensure all required component props are provided
+   - **React Context/SSR errors**: Components using hooks may need client-side only rendering
 
 2. **Database Connection Issues**
    - Verify DATABASE_URL is correctly formatted
