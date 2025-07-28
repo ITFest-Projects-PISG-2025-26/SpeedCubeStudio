@@ -121,6 +121,8 @@ npm install && cd apps/frontend && npm install && npm run build
    - **TypeScript errors**: Ensure all types are properly imported (common issue with Prisma types)
    - **Turbo not found**: If using monorepo, ensure turbo is in dependencies (not devDependencies)
    - **Alternative**: Use direct build commands instead of turbo for production
+   - **Import/Export issues**: Ensure components use correct import syntax (named vs default exports)
+   - **Missing utilities**: Create mock implementations for missing utility files during build
 
 2. **Database Connection Issues**
    - Verify DATABASE_URL is correctly formatted
