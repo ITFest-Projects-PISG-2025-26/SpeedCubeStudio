@@ -16,6 +16,10 @@ const nextConfig = {
     maxInactiveAge: 25 * 1000,
     pagesBufferLength: 2,
   },
+  // Disable SSR for all pages that use client-side state
+  experimental: {
+    esmExternals: 'loose'
+  },
   webpack: (config, { isServer, dev }) => {
     config.resolve.fallback = {
       ...config.resolve.fallback,

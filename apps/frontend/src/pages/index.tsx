@@ -1,8 +1,11 @@
 import React from "react";
-import { TimerDisplay } from "@/components/timer/TimerDisplay";
-import { ScrambleGenerator } from "@/components/timer/ScrambleGenerator";
-import { SolveControls } from "@/components/timer/SolveControls";
-import { Header } from "@/components/Header";
+import dynamic from 'next/dynamic';
+import { Header } from "../components/Header";
+
+// Dynamic imports to avoid SSR issues
+const TimerDisplay = dynamic(() => import("../components/timer/TimerDisplay").then(m => ({ default: m.TimerDisplay })), { ssr: false });
+const ScrambleGenerator = dynamic(() => import("../components/timer/ScrambleGenerator").then(m => ({ default: m.ScrambleGenerator })), { ssr: false });
+const SolveControls = dynamic(() => import("../components/timer/SolveControls").then(m => ({ default: m.SolveControls })), { ssr: false });
 
 export default function HomePage() {
   return (
