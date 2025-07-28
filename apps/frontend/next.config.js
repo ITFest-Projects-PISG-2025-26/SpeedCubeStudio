@@ -1,11 +1,22 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'standalone',
-  trailingSlash: true,
+  reactStrictMode: true,
+  swcMinify: true,
   images: {
     unoptimized: true
   },
-  webpack: (config) => {
+  // Disable all static optimizations to prevent SSR issues
+  experimental: {
+    runtime: 'nodejs',
+    serverComponentsExternalPackages: [],
+  },
+  // Skip build-time optimizations that cause SSR errors
+  onDemandEntries: {
+    maxInactiveAge: 25 * 1000,
+    pagesBufferLength: 2,
+  },
+  webpack: (config, { isServer, dev }) => {
     config.resolve.fallback = {
       ...config.resolve.fallback,
       fs: false,
@@ -19,11 +30,18 @@ const nextConfig = {
       type: 'javascript/auto',
     });
     
+    // Handle client-side only modules
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        net: false,
+        tls: false,
+        crypto: false,
+      };
+    }
+    
     return config;
-  },
-  // Enable JSON module resolution
-  experimental: {
-    allowMiddlewareResponseBody: true,
   },
 }
 

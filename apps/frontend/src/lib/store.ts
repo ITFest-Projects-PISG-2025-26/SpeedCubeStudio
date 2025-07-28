@@ -23,16 +23,24 @@ export const useAuthStore = create<AuthState>()(
       token: null,
       isAuthenticated: false,
       login: (user, token) => {
-        localStorage.setItem('token', token);
+        // Check if we're on the client side before accessing localStorage
+        if (typeof window !== 'undefined') {
+          localStorage.setItem('token', token);
+        }
         set({ user, token, isAuthenticated: true });
       },
       logout: () => {
-        localStorage.removeItem('token');
+        // Check if we're on the client side before accessing localStorage
+        if (typeof window !== 'undefined') {
+          localStorage.removeItem('token');
+        }
         set({ user: null, token: null, isAuthenticated: false });
       },
     }),
     {
       name: 'auth-storage',
+      // Only persist on client side
+      skipHydration: true,
     }
   )
 );
