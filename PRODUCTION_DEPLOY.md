@@ -32,7 +32,7 @@ Click the button below to deploy both services at once:
    - **Root Directory**: Leave empty (monorepo setup)
    - **Build Command**: 
      ```
-     npm install && cd apps/backend && npm install && npm run build && npx prisma generate
+     npm install && cd apps/backend && npm install && npx prisma generate && npm run build
      ```
    - **Start Command**: 
      ```
@@ -81,6 +81,20 @@ Click the button below to deploy both services at once:
 2. Click on "Shell" tab
 3. Run: `cd apps/backend && npx prisma db push`
 
+### Alternative Build Commands (If Turbo Issues)
+
+If you encounter "turbo: not found" errors, use these alternative build commands:
+
+#### Backend Build Command:
+```
+npm install && cd apps/backend && npm install && npx prisma generate && npm run build
+```
+
+#### Frontend Build Command:
+```
+npm install && cd apps/frontend && npm install && npm run build
+```
+
 ### Environment Variables Guide
 
 #### Backend Environment Variables:
@@ -105,6 +119,8 @@ Click the button below to deploy both services at once:
    - Verify the build commands are correct
    - Check build logs for specific errors
    - **TypeScript errors**: Ensure all types are properly imported (common issue with Prisma types)
+   - **Turbo not found**: If using monorepo, ensure turbo is in dependencies (not devDependencies)
+   - **Alternative**: Use direct build commands instead of turbo for production
 
 2. **Database Connection Issues**
    - Verify DATABASE_URL is correctly formatted

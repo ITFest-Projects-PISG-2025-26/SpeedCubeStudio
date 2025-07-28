@@ -3,7 +3,7 @@ services:
   - type: web
     name: speedcube-backend
     env: node
-    buildCommand: npm install && cd apps/backend && npm install && npm run build && npx prisma generate
+    buildCommand: npm install && cd apps/backend && npm install && npx prisma generate && npm run build
     startCommand: cd apps/backend && npm start
     envVars:
       - key: NODE_ENV
