@@ -57,10 +57,3 @@ export default function SignupPage() {
     </div>
   );
 }
-
-// Force server-side rendering to avoid static generation errors
-export async function getServerSideProps() {
-  return {
-    props: {},
-  };
-}

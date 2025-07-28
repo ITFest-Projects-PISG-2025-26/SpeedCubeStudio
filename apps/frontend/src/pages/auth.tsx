@@ -132,10 +132,3 @@ export default function AuthPage() {
     </ClientOnly>
   );
 }
-
-// Force server-side rendering to avoid static generation errors
-export async function getServerSideProps() {
-  return {
-    props: {},
-  };
-}
