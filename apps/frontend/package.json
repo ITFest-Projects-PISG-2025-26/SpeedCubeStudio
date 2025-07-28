@@ -1,0 +1,43 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@cubejs-client/core": "^0.33.6",
+    "@shadcn/ui": "latest",
+    "@types/jwt-decode": "^3.1.0",
+    "@types/three": "^0.178.1",
+    "autoprefixer": "^10.4.17",
+    "axios": "^1.6.2",
+    "chart.js": "^4.5.0",
+    "clsx": "^2.1.1",
+    "jwt-decode": "^4.0.0",
+    "lucide-react": "^0.263.0",
+    "next": "14.1.0",
+    "postcss": "^8.4.35",
+    "react": "18.2.0",
+    "react-chartjs-2": "^5.3.0",
+    "react-dom": "18.2.0",
+    "recharts": "^3.1.0",
+    "socket.io-client": "^4.7.4",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^3.4.1",
+    "three": "^0.178.0",
+    "zod": "^3.22.4",
+    "zustand": "^4.5.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.1.0",
+    "typescript": "^5.4.5"
+  }
+}

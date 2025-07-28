@@ -1,0 +1,458 @@
+[
+  {
+    "id": "OLL01",
+    "group": "OLL",
+    "name": "Dot case 1",
+    "image": "/oll/OLL01.png",
+    "algorithms": ["f R U R' U' R U R' U' R U R' f'"],
+    "tags": ["dot"]
+  },
+  {
+    "id": "OLL02",
+    "group": "OLL",
+    "name": "Dot case 2",
+    "image": "/oll/OLL02.png",
+    "algorithms": ["R2 D R' U2 R D' R' U2 R'"],
+    "tags": ["dot"]
+  },
+  {
+    "id": "OLL03",
+    "group": "OLL",
+    "name": "Line case 1",
+    "image": "/oll/OLL03.png",
+    "algorithms": ["F R U R' U' R U R' U' R U R' U' F'"],
+    "tags": ["line"]
+  },
+  {
+    "id": "OLL04",
+    "group": "OLL",
+    "name": "Line case 2",
+    "image": "/oll/OLL04.png",
+    "algorithms": ["F R U R' U' F' f R U R' U' f'"],
+    "tags": ["line"]
+  },
+  {
+    "id": "OLL05",
+    "group": "OLL",
+    "name": "Square Shape",
+    "image": "/oll/OLL05.png",
+    "algorithms": ["l' U2 L U L' U l"],
+    "tags": ["square"]
+  },
+  {
+    "id": "OLL06",
+    "group": "OLL",
+    "name": "Square Shape",
+    "image": "/oll/OLL06.png",
+    "algorithms": ["r U2 R' U' R U' r'"],
+    "tags": ["square"]
+  },
+  {
+    "id": "OLL07",
+    "group": "OLL",
+    "name": "Small Lightning Bolt",
+    "image": "/oll/OLL07.png",
+    "algorithms": ["r U R' U R U2 r'"],
+    "tags": ["lightning"]
+  },
+  {
+    "id": "OLL08",
+    "group": "OLL",
+    "name": "Small Lightning Bolt",
+    "image": "/oll/OLL08.png",
+    "algorithms": ["l' U' L U' L' U2 l"],
+    "tags": ["lightning"]
+  },
+  {
+    "id": "OLL09",
+    "group": "OLL",
+    "name": "Fish Shape",
+    "image": "/oll/OLL09.png",
+    "algorithms": ["R U R' U' R' F R2 U R' U' F'"],
+    "tags": ["fish"]
+  },
+  {
+    "id": "OLL10",
+    "group": "OLL",
+    "name": "Fish Shape",
+    "image": "/oll/OLL10.png",
+    "algorithms": ["R U R' U R' F R F' R U2 R'"],
+    "tags": ["fish"]
+  },
+  {
+    "id": "OLL11",
+    "group": "OLL",
+    "name": "Small Lightning Bolt",
+    "image": "/oll/OLL11.png",
+    "algorithms": ["r U R' U R' F R F' R U2 r'"],
+    "tags": ["lightning"]
+  },
+  {
+    "id": "OLL12",
+    "group": "OLL",
+    "name": "Small Lightning Bolt",
+    "image": "/oll/OLL12.png",
+    "algorithms": ["M' R' U' R U' R' U2 R U' R r'"],
+    "tags": ["lightning"]
+  },
+  {
+    "id": "OLL13",
+    "group": "OLL",
+    "name": "Knight Move Shape",
+    "image": "/oll/OLL13.png",
+    "algorithms": ["F U R U' R2 F' R U R U' R'"],
+    "tags": ["knight"]
+  },
+  {
+    "id": "OLL14",
+    "group": "OLL",
+    "name": "Knight Move Shape",
+    "image": "/oll/OLL14.png",
+    "algorithms": ["R' F R U R' F' R F U' F'"],
+    "tags": ["knight"]
+  },
+  {
+    "id": "OLL15",
+    "group": "OLL",
+    "name": "Knight Move Shape",
+    "image": "/oll/OLL15.png",
+    "algorithms": ["l' U' l L' U' L U l' U l"],
+    "tags": ["knight"]
+  },
+  {
+    "id": "OLL16",
+    "group": "OLL",
+    "name": "Knight Move Shape",
+    "image": "/oll/OLL16.png",
+    "algorithms": ["r U r' R U R' U' r U' r'"],
+    "tags": ["knight"]
+  },
+  {
+    "id": "OLL17",
+    "group": "OLL",
+    "name": "Dot",
+    "image": "/oll/OLL17.png",
+    "algorithms": ["F R' F' R2 r' U R U' R' U' M'"],
+    "tags": ["dot"]
+  },
+  {
+    "id": "OLL18",
+    "group": "OLL",
+    "name": "Dot",
+    "image": "/oll/OLL18.png",
+    "algorithms": ["r U R' U R U2 r2 U' R U' R' U2 r"],
+    "tags": ["dot"]
+  },
+  {
+    "id": "OLL19",
+    "group": "OLL",
+    "name": "Dot",
+    "image": "/oll/OLL19.png",
+    "algorithms": ["r' R U R U R' U' M' R' F R F'"],
+    "tags": ["dot"]
+  },
+  {
+    "id": "OLL20",
+    "group": "OLL",
+    "name": "Dot",
+    "image": "/oll/OLL20.png",
+    "algorithms": ["r U R' U' M2 U R U' R' U' M'"],
+    "tags": ["dot"]
+  },
+  {
+    "id": "OLL21",
+    "group": "OLL",
+    "name": "Cross",
+    "image": "/oll/OLL21.png",
+    "algorithms": ["R U2 R' U' R U R' U' R U' R'"],
+    "tags": ["cross"]
+  },
+  {
+    "id": "OLL22",
+    "group": "OLL",
+    "name": "Cross",
+    "image": "/oll/OLL22.png",
+    "algorithms": ["R U2 R2 U' R2 U' R2 U2 R"],
+    "tags": ["cross"]
+  },
+  {
+    "id": "OLL23",
+    "group": "OLL",
+    "name": "Cross",
+    "image": "/oll/OLL23.png",
+    "algorithms": ["R2 D' R U2 R' D R U2 R"],
+    "tags": ["cross"]
+  },
+  {
+    "id": "OLL24",
+    "group": "OLL",
+    "name": "Cross",
+    "image": "/oll/OLL24.png",
+    "algorithms": ["r U R' U' r' F R F'"],
+    "tags": ["cross"]
+  },
+  {
+    "id": "OLL25",
+    "group": "OLL",
+    "name": "Cross",
+    "image": "/oll/OLL25.png",
+    "algorithms": ["F' r U R' U' r' F R"],
+    "tags": ["cross"]
+  },
+  {
+    "id": "OLL26",
+    "group": "OLL",
+    "name": "Cross",
+    "image": "/oll/OLL26.png",
+    "algorithms": ["R U2 R' U' R U' R'"],
+    "tags": ["cross"]
+  },
+  {
+    "id": "OLL27",
+    "group": "OLL",
+    "name": "Cross",
+    "image": "/oll/OLL27.png",
+    "algorithms": ["R U R' U R U2 R'"],
+    "tags": ["cross"]
+  },
+  {
+    "id": "OLL28",
+    "group": "OLL",
+    "name": "Corners Oriented",
+    "image": "/oll/OLL28.png",
+    "algorithms": ["r U R' U' r' R U R U' R'"],
+    "tags": ["oriented"]
+  },
+  {
+    "id": "OLL29",
+    "group": "OLL",
+    "name": "Awkward Shape",
+    "image": "/oll/OLL29.png",
+    "algorithms": ["R U R' U' R U' R' F' U' F R U R'"],
+    "tags": ["awkward"]
+  },
+  {
+    "id": "OLL30",
+    "group": "OLL",
+    "name": "Awkward Shape",
+    "image": "/oll/OLL30.png",
+    "algorithms": ["F R' F R2 U' R' U' R U R' F2"],
+    "tags": ["awkward"]
+  },
+  {
+    "id": "OLL31",
+    "group": "OLL",
+    "name": "P Shape",
+    "image": "/oll/OLL31.png",
+    "algorithms": ["R' U' F U R U' R' F' R"],
+    "tags": ["p-shape"]
+  },
+  {
+    "id": "OLL32",
+    "group": "OLL",
+    "name": "P Shape",
+    "image": "/oll/OLL32.png",
+    "algorithms": ["L U F' U' L' U L F L'"],
+    "tags": ["p-shape"]
+  },
+  {
+    "id": "OLL33",
+    "group": "OLL",
+    "name": "T Shape",
+    "image": "/oll/OLL33.png",
+    "algorithms": ["R U R' U' R' F R F'"],
+    "tags": ["t-shape"]
+  },
+  {
+    "id": "OLL34",
+    "group": "OLL",
+    "name": "C Shape",
+    "image": "/oll/OLL34.png",
+    "algorithms": ["R U R2 U' R' F R U R U' F'"],
+    "tags": ["c-shape"]
+  },
+  {
+    "id": "OLL35",
+    "group": "OLL",
+    "name": "Fish Shape",
+    "image": "/oll/OLL35.png",
+    "algorithms": ["R U2 R2 F R F' R U2 R'"],
+    "tags": ["fish"]
+  },
+  {
+    "id": "OLL36",
+    "group": "OLL",
+    "name": "W Shape",
+    "image": "/oll/OLL36.png",
+    "algorithms": ["L' U' L U' L' U L U L F' L' F"],
+    "tags": ["w-shape"]
+  },
+  {
+    "id": "OLL37",
+    "group": "OLL",
+    "name": "Fish Shape",
+    "image": "/oll/OLL37.png",
+    "algorithms": ["F R' F' R U R U' R'"],
+    "tags": ["fish"]
+  },
+  {
+    "id": "OLL38",
+    "group": "OLL",
+    "name": "W Shape",
+    "image": "/oll/OLL38.png",
+    "algorithms": ["R U R' U R U' R' U' R' F R F'"],
+    "tags": ["w-shape"]
+  },
+  {
+    "id": "OLL39",
+    "group": "OLL",
+    "name": "Big Lightning Bolt",
+    "image": "/oll/OLL39.png",
+    "algorithms": ["L F' L' U' L U F U' L'"],
+    "tags": ["lightning"]
+  },
+  {
+    "id": "OLL40",
+    "group": "OLL",
+    "name": "Big Lightning Bolt",
+    "image": "/oll/OLL40.png",
+    "algorithms": ["R' F R U R' U' F' U R"],
+    "tags": ["lightning"]
+  },
+  {
+    "id": "OLL41",
+    "group": "OLL",
+    "name": "Awkward Shape",
+    "image": "/oll/OLL41.png",
+    "algorithms": ["R U R' U R U2 R' F R U R' U' F'"],
+    "tags": ["awkward"]
+  },
+  {
+    "id": "OLL42",
+    "group": "OLL",
+    "name": "Awkward Shape",
+    "image": "/oll/OLL42.png",
+    "algorithms": ["R' U' R U' R' U2 R F R U R' U' F'"],
+    "tags": ["awkward"]
+  },
+  {
+    "id": "OLL43",
+    "group": "OLL",
+    "name": "P Shape",
+    "image": "/oll/OLL43.png",
+    "algorithms": ["F' U' L' U L F"],
+    "tags": ["p-shape"]
+  },
+  {
+    "id": "OLL44",
+    "group": "OLL",
+    "name": "P Shape",
+    "image": "/oll/OLL44.png",
+    "algorithms": ["F U R U' R' F'"],
+    "tags": ["p-shape"]
+  },
+  {
+    "id": "OLL45",
+    "group": "OLL",
+    "name": "T Shape",
+    "image": "/oll/OLL45.png",
+    "algorithms": ["F R U R' U' F'"],
+    "tags": ["t-shape"]
+  },
+  {
+    "id": "OLL46",
+    "group": "OLL",
+    "name": "C Shape",
+    "image": "/oll/OLL46.png",
+    "algorithms": ["R' U' R' F R F' U R"],
+    "tags": ["c-shape"]
+  },
+  {
+    "id": "OLL47",
+    "group": "OLL",
+    "name": "Small L Shape",
+    "image": "/oll/OLL47.png",
+    "algorithms": ["R' U' R' F R F' R' F R F' U R"],
+    "tags": ["l-shape"]
+  },
+  {
+    "id": "OLL48",
+    "group": "OLL",
+    "name": "Small L Shape",
+    "image": "/oll/OLL48.png",
+    "algorithms": ["F R U R' U' R U R' U' F'"],
+    "tags": ["l-shape"]
+  },
+  {
+    "id": "OLL49",
+    "group": "OLL",
+    "name": "Small L Shape",
+    "image": "/oll/OLL49.png",
+    "algorithms": ["r U' r2 U r2 U r2 U' r"],
+    "tags": ["l-shape"]
+  },
+  {
+    "id": "OLL50",
+    "group": "OLL",
+    "name": "Small L Shape",
+    "image": "/oll/OLL50.png",
+    "algorithms": ["r' U r2 U' r2 U' r2 U r'"],
+    "tags": ["l-shape"]
+  },
+  {
+    "id": "OLL51",
+    "group": "OLL",
+    "name": "I Shape",
+    "image": "/oll/OLL51.png",
+    "algorithms": ["F U R U' R' U R U' R' F'"],
+    "tags": ["i-shape"]
+  },
+  {
+    "id": "OLL52",
+    "group": "OLL",
+    "name": "I Shape",
+    "image": "/oll/OLL52.png",
+    "algorithms": ["R U R' U R U' B U' B' R'"],
+    "tags": ["i-shape"]
+  },
+  {
+    "id": "OLL53",
+    "group": "OLL",
+    "name": "Small L Shape",
+    "image": "/oll/OLL53.png",
+    "algorithms": ["l' U2 L U L' U' L U L' U l"],
+    "tags": ["l-shape"]
+  },
+  {
+    "id": "OLL54",
+    "group": "OLL",
+    "name": "Small L Shape",
+    "image": "/oll/OLL54.png",
+    "algorithms": ["r U2 R' U' R U R' U' R U' r'"],
+    "tags": ["l-shape"]
+  },
+  {
+    "id": "OLL55",
+    "group": "OLL",
+    "name": "I Shape",
+    "image": "/oll/OLL55.png",
+    "algorithms": ["R' F R U R U' R2 F' R2 U' R' U R U R'"],
+    "tags": ["i-shape"]
+  },
+  {
+    "id": "OLL56",
+    "group": "OLL",
+    "name": "I Shape",
+    "image": "/oll/OLL56.png",
+    "algorithms": ["r' U' r U' R' U R U' R' U R r' U r"],
+    "tags": ["i-shape"]
+  },
+  {
+    "id": "OLL57",
+    "group": "OLL",
+    "name": "Corners Oriented",
+    "image": "/oll/OLL57.png",
+    "algorithms": ["R U R' U' M' U R U' r'"],
+    "tags": ["oriented"]
+  }
+]

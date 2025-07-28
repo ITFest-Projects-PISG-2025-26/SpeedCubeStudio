@@ -1,0 +1,330 @@
+[
+  {
+    "id": "F2L01",
+    "group": "F2L",
+    "name": "Easy Insert - Right Pair",
+    "image": "/f2l/F2L01.png",
+    "algorithms": ["R U R'"],
+    "tags": ["easy-insert", "beginner"]
+  },
+  {
+    "id": "F2L02",
+    "group": "F2L",
+    "name": "Easy Insert - Left Pair",
+    "image": "/f2l/F2L02.png",
+    "algorithms": ["L' U' L"],
+    "tags": ["easy-insert", "beginner"]
+  },
+  {
+    "id": "F2L03",
+    "group": "F2L",
+    "name": "Disconnected Pair 1",
+    "image": "/f2l/F2L03.png",
+    "algorithms": ["R U R' U2 R U' R' U"],
+    "tags": ["disconnected"]
+  },
+  {
+    "id": "F2L04",
+    "group": "F2L",
+    "name": "Disconnected Pair 2",
+    "image": "/f2l/F2L04.png",
+    "algorithms": ["L' U' L U2 L' U L U'"],
+    "tags": ["disconnected"]
+  },
+  {
+    "id": "F2L05",
+    "group": "F2L",
+    "name": "Disconnected Pair 3",
+    "image": "/f2l/F2L05.png",
+    "algorithms": ["R U R' U2 R U2 R' U"],
+    "tags": ["disconnected"]
+  },
+  {
+    "id": "F2L06",
+    "group": "F2L",
+    "name": "Disconnected Pair 4",
+    "image": "/f2l/F2L06.png",
+    "algorithms": ["L' U' L U2 L' U2 L U'"],
+    "tags": ["disconnected"]
+  },
+  {
+    "id": "F2L07",
+    "group": "F2L",
+    "name": "Disconnected Pair 5",
+    "image": "/f2l/F2L07.png",
+    "algorithms": ["R U' R' U' R U' R' U"],
+    "tags": ["disconnected"]
+  },
+  {
+    "id": "F2L08",
+    "group": "F2L",
+    "name": "Disconnected Pair 6",
+    "image": "/f2l/F2L08.png",
+    "algorithms": ["L' U L U L' U L U'"],
+    "tags": ["disconnected"]
+  },
+  {
+    "id": "F2L09",
+    "group": "F2L",
+    "name": "Disconnected Pair 7",
+    "image": "/f2l/F2L09.png",
+    "algorithms": ["R U R' U' R U2 R' U'"],
+    "tags": ["disconnected"]
+  },
+  {
+    "id": "F2L10",
+    "group": "F2L",
+    "name": "Disconnected Pair 8",
+    "image": "/f2l/F2L10.png",
+    "algorithms": ["L' U' L U L' U2 L U"],
+    "tags": ["disconnected"]
+  },
+  {
+    "id": "F2L11",
+    "group": "F2L",
+    "name": "Corner in Slot 1",
+    "image": "/f2l/F2L11.png",
+    "algorithms": ["R U' R' F R' F' R U"],
+    "tags": ["corner-slot", "keyhole"]
+  },
+  {
+    "id": "F2L12",
+    "group": "F2L",
+    "name": "Corner in Slot 2",
+    "image": "/f2l/F2L12.png",
+    "algorithms": ["L' U L F' L F L' U'"],
+    "tags": ["corner-slot", "keyhole"]
+  },
+  {
+    "id": "F2L13",
+    "group": "F2L",
+    "name": "Corner in Slot 3",
+    "image": "/f2l/F2L13.png",
+    "algorithms": ["R U R' U' R U R'"],
+    "tags": ["corner-slot"]
+  },
+  {
+    "id": "F2L14",
+    "group": "F2L",
+    "name": "Corner in Slot 4",
+    "image": "/f2l/F2L14.png",
+    "algorithms": ["L' U' L U L' U L"],
+    "tags": ["corner-slot"]
+  },
+  {
+    "id": "F2L15",
+    "group": "F2L",
+    "name": "Corner in Slot 5",
+    "image": "/f2l/F2L15.png",
+    "algorithms": ["R U' R' U R U' R'"],
+    "tags": ["corner-slot"]
+  },
+  {
+    "id": "F2L16",
+    "group": "F2L",
+    "name": "Corner in Slot 6",
+    "image": "/f2l/F2L16.png",
+    "algorithms": ["L' U L U' L U L'"],
+    "tags": ["corner-slot"]
+  },
+  {
+    "id": "F2L17",
+    "group": "F2L",
+    "name": "Edge in Slot 1",
+    "image": "/f2l/F2L17.png",
+    "algorithms": ["R U' R' U R U' R' U R U' R'"],
+    "tags": ["edge-in", "keyhole"]
+  },
+  {
+    "id": "F2L18",
+    "group": "F2L",
+    "name": "Edge in Slot 2",
+    "image": "/f2l/F2L18.png",
+    "algorithms": ["R U R' F R' F' R U"],
+    "tags": ["edge-in"]
+  },
+  {
+    "id": "F2L19",
+    "group": "F2L",
+    "name": "Edge in Slot 3",
+    "image": "/f2l/F2L19.png",
+    "algorithms": ["R U R' U2 R U R' U"],
+    "tags": ["edge-in", "keyhole"]
+  },
+  {
+    "id": "F2L20",
+    "group": "F2L",
+    "name": "Edge in Slot 4",
+    "image": "/f2l/F2L20.png",
+    "algorithms": ["R U' R' U2 R U' R' U'"],
+    "tags": ["edge-in", "keyhole"]
+  },
+  {
+    "id": "F2L21",
+    "group": "F2L",
+    "name": "Edge in Slot 5",
+    "image": "/f2l/F2L21.png",
+    "algorithms": ["F' U F U' R U' R' U"],
+    "tags": ["edge-in"]
+  },
+  {
+    "id": "F2L22",
+    "group": "F2L",
+    "name": "Edge in Slot 6",
+    "image": "/f2l/F2L22.png",
+    "algorithms": ["R U' R' U F' U F U'"],
+    "tags": ["edge-in"]
+  },
+  {
+    "id": "F2L23",
+    "group": "F2L",
+    "name": "Connected Pair 1",
+    "image": "/f2l/F2L23.png",
+    "algorithms": ["R' U' R2 U' R2 U2 R"],
+    "tags": ["connected"]
+  },
+  {
+    "id": "F2L24",
+    "group": "F2L",
+    "name": "Connected Pair 2",
+    "image": "/f2l/F2L24.png",
+    "algorithms": ["L U L2 U L2 U2 L'"],
+    "tags": ["connected"]
+  },
+  {
+    "id": "F2L25",
+    "group": "F2L",
+    "name": "Connected Pair 3",
+    "image": "/f2l/F2L25.png",
+    "algorithms": ["R U' R' U' R U R' U"],
+    "tags": ["connected"]
+  },
+  {
+    "id": "F2L26",
+    "group": "F2L",
+    "name": "Connected Pair 4",
+    "image": "/f2l/F2L26.png",
+    "algorithms": ["L' U L U L' U' L U'"],
+    "tags": ["connected"]
+  },
+  {
+    "id": "F2L27",
+    "group": "F2L",
+    "name": "Connected Pair 5",
+    "image": "/f2l/F2L27.png",
+    "algorithms": ["R U' R' U2 F' U' F"],
+    "tags": ["connected", "keyhole"]
+  },
+  {
+    "id": "F2L28",
+    "group": "F2L",
+    "name": "Connected Pair 6",
+    "image": "/f2l/F2L28.png",
+    "algorithms": ["L' U L U2 F U F'"],
+    "tags": ["connected", "keyhole"]
+  },
+  {
+    "id": "F2L29",
+    "group": "F2L",
+    "name": "Connected Pair 7",
+    "image": "/f2l/F2L29.png",
+    "algorithms": ["R U' R' U R U2 R'"],
+    "tags": ["connected"]
+  },
+  {
+    "id": "F2L30",
+    "group": "F2L",
+    "name": "Connected Pair 8",
+    "image": "/f2l/F2L30.png",
+    "algorithms": ["L' U L U' L' U2 L"],
+    "tags": ["connected"]
+  },
+  {
+    "id": "F2L31",
+    "group": "F2L",
+    "name": "Connected Pair 9",
+    "image": "/f2l/F2L31.png",
+    "algorithms": ["R U' R' F' U' F R U' R'"],
+    "tags": ["connected"]
+  },
+  {
+    "id": "F2L32",
+    "group": "F2L",
+    "name": "Connected Pair 10",
+    "image": "/f2l/F2L32.png",
+    "algorithms": ["L' U L F U F' L' U L"],
+    "tags": ["connected"]
+  },
+  {
+    "id": "F2L33",
+    "group": "F2L",
+    "name": "Both Pieces in Slot 1",
+    "image": "/f2l/F2L33.png",
+    "algorithms": ["R U' R' U R U2 R' U R U' R'"],
+    "tags": ["both-in-slot"]
+  },
+  {
+    "id": "F2L34",
+    "group": "F2L",
+    "name": "Both Pieces in Slot 2",
+    "image": "/f2l/F2L34.png",
+    "algorithms": ["R U' R' U' R U R' U2 R U' R'"],
+    "tags": ["both-in-slot"]
+  },
+  {
+    "id": "F2L35",
+    "group": "F2L",
+    "name": "Both Pieces in Slot 3",
+    "image": "/f2l/F2L35.png",
+    "algorithms": ["R U' R' F' L' U2 L F"],
+    "tags": ["both-in-slot"]
+  },
+  {
+    "id": "F2L36",
+    "group": "F2L",
+    "name": "Both Pieces in Slot 4",
+    "image": "/f2l/F2L36.png",
+    "algorithms": ["F' L' U2 L F R U R'"],
+    "tags": ["both-in-slot"]
+  },
+  {
+    "id": "F2L37",
+    "group": "F2L",
+    "name": "Both Pieces in Slot 5",
+    "image": "/f2l/F2L37.png",
+    "algorithms": ["R2 U2 F R2 F' U2 R' U R'"],
+    "tags": ["both-in-slot", "keyhole"]
+  },
+  {
+    "id": "F2L38",
+    "group": "F2L",
+    "name": "Edge in Wrong Slot 1",
+    "image": "/f2l/F2L38.png",
+    "algorithms": ["R U R2 U' R U"],
+    "tags": ["wrong-slot", "edge"]
+  },
+  {
+    "id": "F2L39",
+    "group": "F2L",
+    "name": "Edge in Wrong Slot 2",
+    "image": "/f2l/F2L39.png",
+    "algorithms": ["L' U' L2 U L' U'"],
+    "tags": ["wrong-slot", "edge"]
+  },
+  {
+    "id": "F2L40",
+    "group": "F2L",
+    "name": "Corner in Wrong Slot 1",
+    "image": "/f2l/F2L40.png",
+    "algorithms": ["R' U2 R U' R U R' U2"],
+    "tags": ["wrong-slot", "corner"]
+  },
+  {
+    "id": "F2L41",
+    "group": "F2L",
+    "name": "Corner in Wrong Slot 2",
+    "image": "/f2l/F2L41.png",
+    "algorithms": ["L U2 L' U L' U' L U2"],
+    "tags": ["wrong-slot", "corner"]
+  }
+]
