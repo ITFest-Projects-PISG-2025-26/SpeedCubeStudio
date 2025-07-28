@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+// Force rebuild for react-is dependency issue - 2025-07-29
 const nextConfig = {
   output: 'standalone',
   reactStrictMode: true,
