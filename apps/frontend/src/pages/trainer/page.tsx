@@ -12,10 +12,10 @@ export default function TrainerPage() {
       <Header />
       <main className="flex flex-col items-center p-4 gap-6">
         <div className="w-full flex justify-between items-center">
-          <TrainerFilters />
+          <TrainerFilters selectedGroup="OLL" onSelectGroup={(group) => console.log(group)} />
           <VoiceToggle />
         </div>
-        <CaseImage />
+        <CaseImage imageUrl="" />
       </main>
     </div>
   );

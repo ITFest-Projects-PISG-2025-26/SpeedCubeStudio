@@ -17,7 +17,7 @@ export default function StatsPage() {
           <StatCard label="Ao12" value="6.44s" />
           <StatCard label="Ao100" value="7.01s" />
         </div>
-        <Graph />
+        <Graph data={[]} />
       </main>
     </div>
   );

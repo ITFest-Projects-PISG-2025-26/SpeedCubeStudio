@@ -14,7 +14,7 @@ export default function SolverPage() {
         <h1 className="text-2xl font-bold">Rubik’s Cube Solver</h1>
         <ColorPickerCube />
         <Cube3DViewer />
-        <MoveBreakdown />
+        <MoveBreakdown moves={[]} />
       </main>
     </div>
   );
