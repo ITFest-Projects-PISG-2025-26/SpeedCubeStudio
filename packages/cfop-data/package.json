@@ -1,0 +1,7 @@
+{
+  "name": "cfop-data",
+  "version": "1.0.0",
+  "description": "CFOP algorithm data for SpeedCube Studio",
+  "main": "index.js",
+  "type": "module"
+}

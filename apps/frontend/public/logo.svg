@@ -1,0 +1,112 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E40AF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cubeGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F8FAFC;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cubeGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E2E8F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#CBD5E1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cubeGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#94A3B8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#64748B;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="4" dy="8" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="64" fill="url(#bgGradient)"/>
+  
+  <!-- Main Cube Container with shadow -->
+  <g filter="url(#shadow)">
+    <!-- Front face of the cube -->
+    <rect x="140" y="160" width="140" height="140" fill="url(#cubeGradient1)" stroke="#1E293B" stroke-width="2"/>
+    
+    <!-- Individual squares on front face (3x3 grid) -->
+    <!-- Row 1 -->
+    <rect x="150" y="170" width="40" height="40" fill="#EF4444" stroke="#DC2626" stroke-width="1"/>
+    <rect x="190" y="170" width="40" height="40" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+    <rect x="230" y="170" width="40" height="40" fill="#10B981" stroke="#059669" stroke-width="1"/>
+    
+    <!-- Row 2 -->
+    <rect x="150" y="210" width="40" height="40" fill="#F59E0B" stroke="#D97706" stroke-width="1"/>
+    <rect x="190" y="210" width="40" height="40" fill="#EF4444" stroke="#DC2626" stroke-width="1"/>
+    <rect x="230" y="210" width="40" height="40" fill="#3B82F6" stroke="#2563EB" stroke-width="1"/>
+    
+    <!-- Row 3 -->
+    <rect x="150" y="250" width="40" height="40" fill="#8B5CF6" stroke="#7C3AED" stroke-width="1"/>
+    <rect x="190" y="250" width="40" height="40" fill="#10B981" stroke="#059669" stroke-width="1"/>
+    <rect x="230" y="250" width="40" height="40" fill="#F59E0B" stroke="#D97706" stroke-width="1"/>
+    
+    <!-- Right face of the cube (isometric) -->
+    <polygon points="280,160 360,160 380,140 300,140" fill="url(#cubeGradient2)" stroke="#1E293B" stroke-width="2"/>
+    <polygon points="280,300 360,300 380,280 300,280" fill="url(#cubeGradient2)" stroke="#1E293B" stroke-width="2"/>
+    <polygon points="280,160 280,300 300,280 300,140" fill="url(#cubeGradient2)" stroke="#1E293B" stroke-width="2"/>
+    <polygon points="360,160 360,300 380,280 380,140" fill="url(#cubeGradient2)" stroke="#1E293B" stroke-width="2"/>
+    
+    <!-- Add some squares on the right face -->
+    <polygon points="290,170 320,170 325,165 295,165" fill="#3B82F6" stroke="#2563EB" stroke-width="0.5"/>
+    <polygon points="330,170 360,170 365,165 335,165" fill="#EF4444" stroke="#DC2626" stroke-width="0.5"/>
+    <polygon points="290,200 320,200 325,195 295,195" fill="#10B981" stroke="#059669" stroke-width="0.5"/>
+    
+    <!-- Top face of the cube (isometric) -->
+    <polygon points="140,160 280,160 300,140 160,140" fill="url(#cubeGradient3)" stroke="#1E293B" stroke-width="2"/>
+    
+    <!-- Add some squares on the top face -->
+    <polygon points="160,150 190,150 195,145 165,145" fill="#F59E0B" stroke="#D97706" stroke-width="0.5"/>
+    <polygon points="200,150 230,150 235,145 205,145" fill="#8B5CF6" stroke="#7C3AED" stroke-width="0.5"/>
+    <polygon points="240,150 270,150 275,145 245,145" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="0.5"/>
+  </g>
+  
+  <!-- Timer Display with modern design -->
+  <rect x="60" y="340" width="392" height="60" rx="16" fill="#1F2937" stroke="#374151" stroke-width="2"/>
+  <rect x="68" y="348" width="376" height="44" rx="12" fill="#111827"/>
+  
+  <!-- Timer Text with glow effect -->
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <text x="256" y="382" text-anchor="middle" fill="#10B981" font-family="JetBrains Mono, Monaco, monospace" font-size="28" font-weight="bold" filter="url(#glow)">12.347</text>
+  
+  <!-- Animated dots to show timer is running -->
+  <circle cx="340" cy="375" r="3" fill="#10B981" opacity="0.8">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="350" cy="375" r="3" fill="#10B981" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1s" begin="0.33s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="360" cy="375" r="3" fill="#10B981" opacity="0.4">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1s" begin="0.66s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Modern SpeedCube Studio Text -->
+  <text x="256" y="445" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="-0.5px">SpeedCube</text>
+  <text x="256" y="470" text-anchor="middle" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="500" letter-spacing="1px">STUDIO</text>
+  
+  <!-- Decorative elements - corner highlights -->
+  <rect x="40" y="40" width="40" height="4" rx="2" fill="#FFFFFF" opacity="0.3"/>
+  <rect x="40" y="40" width="4" height="40" rx="2" fill="#FFFFFF" opacity="0.3"/>
+  
+  <rect x="432" y="40" width="40" height="4" rx="2" fill="#FFFFFF" opacity="0.3"/>
+  <rect x="468" y="40" width="4" height="40" rx="2" fill="#FFFFFF" opacity="0.3"/>
+  
+  <rect x="40" y="468" width="40" height="4" rx="2" fill="#FFFFFF" opacity="0.3"/>
+  <rect x="40" y="432" width="4" height="40" rx="2" fill="#FFFFFF" opacity="0.3"/>
+  
+  <rect x="432" y="468" width="40" height="4" rx="2" fill="#FFFFFF" opacity="0.3"/>
+  <rect x="468" y="432" width="4" height="40" rx="2" fill="#FFFFFF" opacity="0.3"/>
+</svg>

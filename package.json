@@ -1,0 +1,33 @@
+{
+  "name": "speedcubestudio",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^24.1.0",
+    "prisma": "^6.12.0"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "build:backend": "cd apps/backend && npm run build",
+    "build:frontend": "cd apps/frontend && npm run build",
+    "start:backend": "cd apps/backend && npm start",
+    "start:frontend": "cd apps/frontend && npm start",
+    "setup": "npm install && cd apps/backend && npm install && cd ../frontend && npm install && cd ../backend && npx prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.12.0",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "bcryptjs": "^3.0.2",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "react-is": "^18.2.0",
+    "turbo": "^1.11.0"
+  }
+}

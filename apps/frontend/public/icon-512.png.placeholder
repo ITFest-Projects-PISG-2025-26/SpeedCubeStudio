@@ -1,0 +1,10 @@
+# Placeholder for icon-512.png
+# 
+# This file should be replaced with an actual 512x512 PNG icon
+# for Progressive Web App (PWA) support.
+#
+# You can generate icons from the logo.svg file using tools like:
+# - Figma
+# - Adobe Illustrator  
+# - Online icon generators
+# - ImageMagick: convert logo.svg -resize 512x512 icon-512.png

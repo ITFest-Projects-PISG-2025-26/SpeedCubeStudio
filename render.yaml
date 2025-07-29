@@ -1,0 +1,41 @@
+services:
+  # Backend API Service
+  - type: web
+    name: speedcube-backend
+    env: node
+    buildCommand: npm install && cd apps/backend && npm install && npx prisma generate && npm run build
+    startCommand: cd apps/backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 4000
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: FRONTEND_URL
+        sync: false
+    healthCheckPath: /api/health
+
+  # Frontend Web Service
+  - type: web
+    name: speedcube-frontend
+    env: node
+    buildCommand: npm install && cd apps/frontend && npm install && npm run build
+    startCommand: cd apps/frontend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: NEXT_PUBLIC_API_URL
+        sync: false
+      - key: NEXT_PUBLIC_SOCKET_URL
+        sync: false
+
+  # PostgreSQL Database
+  - type: pserv
+    name: speedcube-database
+    env: postgresql
+    plan: starter

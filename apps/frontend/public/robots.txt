@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow admin routes if any
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://speedcubestudio.com/sitemap.xml
