@@ -13,7 +13,7 @@ export default function HomePage() {
   const [currentTime, setCurrentTime] = useState(0);
   const [isTimerRunning, setIsTimerRunning] = useState(false);
   const [scramble, setScramble] = useState("");
-  const { addSolve } = useSolveStore();
+  const { addSolve, solves } = useSolveStore();
 
   const handleTimerUpdate = (time: number, running: boolean) => {
     setCurrentTime(time);
@@ -21,11 +21,16 @@ export default function HomePage() {
   };
 
   const handleSolveEnd = (time: number) => {
-    console.log('Solve completed in:', time, 'ms');
+    console.log('🏁 HomePage: Solve completed in:', time, 'ms');
+    console.log('🧩 HomePage: Current scramble:', scramble);
+    console.log('📊 HomePage: Current solve count:', solves.length);
     if (scramble && time > 0) {
+      console.log('✅ HomePage: Adding solve to store');
       addSolve(time, scramble);
       // Generate new scramble for next solve
       setScramble("");
+    } else {
+      console.log('❌ HomePage: Not adding solve - missing scramble or invalid time');
     }
   };
 
