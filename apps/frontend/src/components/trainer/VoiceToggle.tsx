@@ -27,7 +27,10 @@ const VoiceToggle: React.FC<VoiceToggleProps> = ({ isEnabled, onToggle }) => {
       <span className="text-sm font-medium">Voice Guide</span>
       <button
         onClick={handleToggle}
-        className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
+        title={`${isEnabled ? 'Disable' : 'Enable'} voice guidance`}
+        aria-label={`${isEnabled ? 'Disable' : 'Enable'} voice guidance`}
+        aria-pressed={isEnabled ? 'true' : 'false'}
+        className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
           isEnabled ? 'bg-blue-600' : 'bg-gray-300 dark:bg-gray-600'
         }`}
       >
