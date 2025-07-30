@@ -1,0 +1,10 @@
+{
+  "extends": [],
+  "hints": {
+    "apple-touch-icons": "off",
+    "compat-api": "off",
+    "compat-api/html": "off",
+    "meta-theme-color": "off",
+    "no-html-only-headers": "off"
+  }
+}

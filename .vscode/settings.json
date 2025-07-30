@@ -31,5 +31,18 @@
   },
   "problems.showCurrentInStatus": false,
   "html.validate.scripts": true,
-  "html.validate.styles": true
+  "html.validate.styles": true,
+  "webhint.configuration": {
+    "hints": {
+      "apple-touch-icons": "off",
+      "compat-api": "off",
+      "compat-api/html": "off"
+    }
+  },
+  "edge-devtools.webhint": {
+    "hints": {
+      "apple-touch-icons": "off",
+      "compat-api": "off"
+    }
+  }
 }
