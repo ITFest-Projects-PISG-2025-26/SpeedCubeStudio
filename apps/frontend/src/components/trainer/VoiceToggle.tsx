@@ -22,14 +22,17 @@ const VoiceToggle: React.FC<VoiceToggleProps> = ({ isEnabled, onToggle }) => {
     );
   }
 
+  const buttonTitle = isEnabled ? 'Disable voice guidance' : 'Enable voice guidance';
+  const ariaPressed = isEnabled ? 'true' : 'false';
+
   return (
     <div className="flex items-center gap-3">
       <span className="text-sm font-medium">Voice Guide</span>
       <button
         onClick={handleToggle}
-        title={`${isEnabled ? 'Disable' : 'Enable'} voice guidance`}
-        aria-label={`${isEnabled ? 'Disable' : 'Enable'} voice guidance`}
-        aria-pressed={isEnabled ? 'true' : 'false'}
+        title={buttonTitle}
+        aria-label={buttonTitle}
+        aria-pressed={ariaPressed}
         className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
           isEnabled ? 'bg-blue-600' : 'bg-gray-300 dark:bg-gray-600'
         }`}

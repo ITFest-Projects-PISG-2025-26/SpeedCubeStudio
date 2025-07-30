@@ -41,3 +41,29 @@ input, textarea, select {
   background-color: #555;
   border-radius: 4px;
 }
+
+/* Color picker cube styles */
+:root {
+  --color-white: #ffffff;
+  --color-yellow: #ffd500;
+  --color-green: #00b04f;
+  --color-blue: #0046ad;
+  --color-red: #c41e3a;
+  --color-orange: #ff5800;
+}
+
+/* Color picker button styles */
+button[data-color="white"] { background-color: #ffffff; }
+button[data-color="yellow"] { background-color: #ffd500; }
+button[data-color="green"] { background-color: #00b04f; }
+button[data-color="blue"] { background-color: #0046ad; }
+button[data-color="red"] { background-color: #c41e3a; }
+button[data-color="orange"] { background-color: #ff5800; }
+
+/* Cube tile colors */
+button[data-cube-color="white"] { background-color: #ffffff; }
+button[data-cube-color="yellow"] { background-color: #ffd500; }
+button[data-cube-color="green"] { background-color: #00b04f; }
+button[data-cube-color="blue"] { background-color: #0046ad; }
+button[data-cube-color="red"] { background-color: #c41e3a; }
+button[data-cube-color="orange"] { background-color: #ff5800; }

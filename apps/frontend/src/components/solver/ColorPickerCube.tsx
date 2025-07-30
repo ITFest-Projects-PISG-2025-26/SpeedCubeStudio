@@ -47,9 +47,7 @@ const ColorPickerCube = ({
             className={`w-8 h-8 rounded-full border-2 transition-all hover:scale-110 ${
               selectedColor === name ? 'border-black border-4 shadow-lg' : 'border-gray-300 hover:border-gray-500'
             }`}
-            style={{
-              backgroundColor: hex,
-            }}
+            data-color={name}
           />
         ))}
       </div>
@@ -66,7 +64,7 @@ const ColorPickerCube = ({
                     title={`${face} face, position ${rIdx + 1}-${cIdx + 1}: ${color}`}
                     aria-label={`Set ${face} face position ${rIdx + 1}-${cIdx + 1} to ${selectedColor}`}
                     className="w-6 h-6 border border-gray-400 hover:border-gray-600 transition-colors"
-                    style={{ backgroundColor: cubeColors[color] || color }}
+                    data-cube-color={color}
                     onClick={() =>
                       handleTileClick(face as Face, rIdx, cIdx)
                     }
