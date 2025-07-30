@@ -30,10 +30,12 @@
 - ✅ **SSR compatibility FIXED**: Using getServerSideProps instead of static generation
 
 ### Technical Changes Made:
-1. **File Structure Fix**: Renamed all `page.tsx` files to `index.tsx` for Pages Router compatibility
+1. **File Structure Fix**: Renamed all `page.tsx` files to `index.tsx` for 
+   Pages Router compatibility
 2. **Client Directives**: Removed `"use client"` directives and added `getServerSideProps`
 3. **Import Paths**: Fixed @/ aliases to use relative imports (../../components/)
-4. **Router Imports**: Updated from `next/navigation` to `next/router` for Pages Router
+4. **Router Imports**: Updated from `next/navigation` to `next/router` for
+   Pages Router
 5. **Error Handling**: Created custom `_error.tsx` page for proper error handling
 
 ### Build Output:
@@ -66,7 +68,8 @@ Route (pages)                Size     First Load JS
 - Charts functionality temporarily disabled (placeholder shown)
 - Core application functionality preserved
 - **All routes now working**: /trainer, /solver, /stats, /login, /signup
-- Recent commits: `e7e64b3` (routing fix), `21350e2` (react-is), `0cbd6f6` (recharts removal)
+- Recent commits: `e7e64b3` (routing fix), `21350e2` (react-is), 
+  `0cbd6f6` (recharts removal)
 
 ## Quick Deploy on Render
 
@@ -100,7 +103,8 @@ Click the button below to deploy both services at once:
    - **Root Directory**: Leave empty (monorepo setup)
    - **Build Command**: 
      ```
-     npm install && cd apps/backend && npm install && npx prisma generate && npm run build
+     npm install && cd apps/backend && npm install && \
+     npx prisma generate && npm run build
      ```
    - **Start Command**: 
      ```
@@ -165,7 +169,8 @@ npm install && cd apps/frontend && npm install && SKIP_BUILD_STATIC_GENERATION=t
 ```
 
 #### For React Context/Hook Errors:
-If you see `Cannot read properties of null (reading 'useContext')` or similar errors, set this environment variable:
+If you see `Cannot read properties of null (reading 'useContext')` or similar 
+errors, set this environment variable:
 ```
 SKIP_BUILD_STATIC_GENERATION=true
 ```
@@ -197,14 +202,20 @@ SKIP_BUILD_STATIC_GENERATION=true
      - Ensure `typescript`, `@types/react`, and `@types/node` are in dependencies (not devDependencies)
      - Common error: "do not have the required package(s) installed" means TypeScript deps are missing
      - Ensure all types are properly imported (common issue with Prisma types)
-   - **Turbo not found**: If using monorepo, ensure turbo is in dependencies (not devDependencies)
+   - **Turbo not found**: If using monorepo, ensure turbo is in dependencies 
+     (not devDependencies)
    - **Alternative**: Use direct build commands instead of turbo for production
-   - **Import/Export issues**: Ensure components use correct import syntax (named vs default exports)
-   - **Missing utilities**: Create mock implementations for missing utility files during build
+   - **Import/Export issues**: Ensure components use correct import syntax 
+     (named vs default exports)
+   - **Missing utilities**: Create mock implementations for missing utility 
+     files during build
    - **Component props**: Ensure all required component props are provided
-   - **React Context/SSR errors**: Components using hooks may cause prerender failures but the build still succeeds
-   - **"Export encountered errors" message**: This is often non-critical for SSR apps - check if .next directory was created
-   - **Missing react-is dependency**: If you see "Can't resolve 'react-is'" for recharts module:
+   - **React Context/SSR errors**: Components using hooks may cause prerender 
+     failures but the build still succeeds
+   - **"Export encountered errors" message**: This is often non-critical for 
+     SSR apps - check if .next directory was created
+   - **Missing react-is dependency**: If you see "Can't resolve 'react-is'" 
+     for recharts module:
      - Ensure `"react-is": "^18.2.0"` is in dependencies (not devDependencies)
      - This is required for recharts 3.x compatibility
      - Try rebuilding if dependency exists but error persists
@@ -301,4 +312,5 @@ When you're ready to scale:
 
 ---
 
-Need help? Check the detailed deployment guide in `RENDER_DEPLOYMENT.md` or open an issue in the repository.
+Need help? Check the detailed deployment guide in `RENDER_DEPLOYMENT.md` or 
+open an issue in the repository.
