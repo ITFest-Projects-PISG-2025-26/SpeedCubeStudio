@@ -19,7 +19,9 @@
 3. Configuration:
    - **Name**: `speedcube-backend`
    - **Environment**: `Node`
-   - **Build Command**: `npm install && cd apps/backend && npm install && npm run build && npx prisma generate`
+   - **Build Command**:  
+     `npm install && cd apps/backend && npm install && \  
+     npm run build && npx prisma generate`
    - **Start Command**: `cd apps/backend && npm start`
 
 #### Environment Variables for Backend:
@@ -37,7 +39,9 @@ FRONTEND_URL=https://[your-frontend-url].onrender.com
 3. Configuration:
    - **Name**: `speedcube-frontend`
    - **Environment**: `Node`
-   - **Build Command**: `npm install && cd apps/frontend && npm install && npm run build`
+   - **Build Command**:  
+     `npm install && cd apps/frontend && npm install && \  
+     npm run build`
    - **Start Command**: `cd apps/frontend && npm start`
 
 #### Environment Variables for Frontend:
