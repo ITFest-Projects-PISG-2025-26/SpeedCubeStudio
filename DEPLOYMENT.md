@@ -7,17 +7,49 @@
 - **User authentication** with personal solve history
 - **Room-based system** with 6-digit join codes
 - **Socket.IO** for real-time synchronization
-- **PostgreSQL** database with Prisma ORM
+- **SQLite/PostgreSQL** database with Prisma ORM
 - **Next.js** frontend with **Express** backend
 
 ---
 
-## 📋 Prerequisites & Versions
+## � Render Deployment (Backend)
+
+### Backend Service Settings:
+
+**Build Command:**
+```bash
+npm run build:backend
+```
+
+**Start Command:**
+```bash
+npm run start:backend
+```
+
+**Alternative Build Commands (if above fails):**
+```bash
+cd apps/backend && npm install && npx prisma generate && npm run build
+```
+
+**Environment Variables Required:**
+- `NODE_ENV=production`
+- `DATABASE_URL=file:./prod.db` (SQLite) or PostgreSQL URL
+- `JWT_SECRET=your-secure-jwt-secret-here`
+- `PORT=4000` (Render will override this)
+- `FRONTEND_URL=https://your-frontend-url.com`
+
+### Alternative using shell scripts:
+- Build: `./render-build.sh`
+- Start: `./render-start.sh`
+
+---
+
+## �📋 Prerequisites & Versions
 
 ### Development Environment
 - **Node.js**: >= 18.0.0
 - **npm**: >= 8.0.0  
-- **PostgreSQL**: >= 13.0
+- **SQLite** (default) or **PostgreSQL**: >= 13.0
 - **Git**: Latest version
 
 ### Production Requirements
