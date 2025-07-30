@@ -8,7 +8,8 @@ import { cn } from "../lib/utils";
 import { logout, isAuthenticated, getCurrentUser } from "../utils/auth";
 
 const navLinks = [
-  { href: "/", label: "Timer" },
+  { href: "/", label: "Home" },
+  { href: "/timer", label: "Timer" },
   { href: "/trainer", label: "Trainer" },
   { href: "/solver", label: "Solver" },
   { href: "/stats", label: "Stats" },

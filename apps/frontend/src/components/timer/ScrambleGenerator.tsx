@@ -21,14 +21,19 @@ export function ScrambleGenerator({ onNewScramble }: ScrambleGeneratorProps) {
   }, []);
 
   return (
-    <div className="text-xl font-mono text-center mt-4 select-none">
-      <p>{scramble}</p>
-      <button
-        onClick={generateNew}
-        className="mt-2 text-sm text-blue-600 underline hover:text-blue-800"
-      >
-        New Scramble
-      </button>
+    <div className="w-full max-w-2xl mx-auto">
+      <div className="text-center p-6 bg-card rounded-lg border">
+        <h3 className="text-lg font-semibold mb-4 text-gray-700">Scramble</h3>
+        <p className="text-xl font-mono mb-4 leading-relaxed break-words">
+          {scramble || 'Generating scramble...'}
+        </p>
+        <button
+          onClick={generateNew}
+          className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+        >
+          New Scramble
+        </button>
+      </div>
     </div>
   );
 }

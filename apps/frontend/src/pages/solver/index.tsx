@@ -87,7 +87,10 @@ export default function SolverPage() {
           
           <div className="space-y-4">
             <h2 className="text-xl font-semibold">3D Preview</h2>
-            <Cube3DViewer />
+            <Cube3DViewer 
+              cubeState={cubeState}
+              showSolution={solution.length > 0}
+            />
           </div>
         </div>
         
