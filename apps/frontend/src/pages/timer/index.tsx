@@ -270,3 +270,10 @@ export default function TimerPage() {
     </div>
   );
 }
+
+// Disable SSR for this page to avoid hydration issues with stores
+export async function getServerSideProps() {
+  return {
+    props: {},
+  };
+}
