@@ -1,0 +1,31 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- PLL Algorithm PLL16 -->
+  <defs>
+    <linearGradient id="cubeGradientPLL16" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2196F3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#64B5F6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Cube representation -->
+  <!-- Top face -->
+  <polygon points="20,40 60,20 100,40 60,60" fill="url(#cubeGradientPLL16)" stroke="#333" stroke-width="1"/>
+  
+  <!-- Right face -->
+  <polygon points="60,60 100,40 100,80 60,100" fill="#64B5F6" stroke="#333" stroke-width="1"/>
+  
+  <!-- Left face -->
+  <polygon points="20,40 60,60 60,100 20,80" fill="#2196F3" stroke="#333" stroke-width="1"/>
+  
+  <!-- Grid lines to show 3x3 structure -->
+  <!-- Top face grid -->
+  <line x1="33.33" y1="33.33" x2="46.67" y2="46.67" stroke="#333" stroke-width="0.5"/>
+  <line x1="73.33" y1="33.33" x2="86.67" y2="46.67" stroke="#333" stroke-width="0.5"/>
+  <line x1="40" y1="26.67" x2="80" y2="53.33" stroke="#333" stroke-width="0.5"/>
+  
+  <!-- Algorithm ID -->
+  <text x="60" y="15" text-anchor="middle" fill="#0D47A1" font-family="Arial, sans-serif" font-size="12" font-weight="bold">PLL16</text>
+  
+  <!-- Algorithm name -->
+  <text x="60" y="115" text-anchor="middle" fill="#0D47A1" font-family="Arial, sans-serif" font-size="10">V</text>
+</svg>

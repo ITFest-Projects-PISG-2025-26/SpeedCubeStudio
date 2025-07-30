@@ -1,13 +1,26 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="32" height="32" rx="6" fill="#2563EB"/>
-<rect x="6" y="6" width="20" height="20" rx="2" fill="white"/>
-<rect x="8" y="8" width="6" height="6" fill="#DC2626"/>
-<rect x="14" y="8" width="4" height="6" fill="#FBBF24"/>
-<rect x="18" y="8" width="6" height="6" fill="#10B981"/>
-<rect x="8" y="14" width="6" height="4" fill="#3B82F6"/>
-<rect x="14" y="14" width="4" height="4" fill="#EF4444"/>
-<rect x="18" y="14" width="6" height="4" fill="#F59E0B"/>
-<rect x="8" y="18" width="6" height="6" fill="#8B5CF6"/>
-<rect x="14" y="18" width="4" height="6" fill="#EC4899"/>
-<rect x="18" y="18" width="6" height="6" fill="#06B6D4"/>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="background: #f0f0f0;">
+  <!-- Simple Rubik's Cube Favicon -->
+  
+  <!-- Top face (white/light) -->
+  <polygon points="8,12 16,8 24,12 16,16" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  
+  <!-- Right face (red) -->
+  <polygon points="16,16 24,12 24,22 16,26" fill="#ff4444" stroke="#333" stroke-width="1"/>
+  
+  <!-- Left face (blue) -->
+  <polygon points="8,12 16,16 16,26 8,22" fill="#4488ff" stroke="#333" stroke-width="1"/>
+  
+  <!-- Simple 3x3 grid lines -->
+  <!-- Top face divisions -->
+  <line x1="10.67" y1="10.67" x2="13.33" y2="12" stroke="#333" stroke-width="0.5"/>
+  <line x1="18.67" y1="12" x2="21.33" y2="10.67" stroke="#333" stroke-width="0.5"/>
+  <line x1="12" y1="9.33" x2="20" y2="13.33" stroke="#333" stroke-width="0.5"/>
+  
+  <!-- Right face divisions -->
+  <line x1="18.67" y1="14" x2="21.33" y2="13" stroke="#333" stroke-width="0.5"/>
+  <line x1="18.67" y1="20" x2="21.33" y2="19" stroke="#333" stroke-width="0.5"/>
+  
+  <!-- Left face divisions -->
+  <line x1="10.67" y1="14" x2="13.33" y2="18" stroke="#333" stroke-width="0.5"/>
+  <line x1="10.67" y1="20" x2="13.33" y2="24" stroke="#333" stroke-width="0.5"/>
 </svg>

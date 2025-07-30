@@ -3,7 +3,7 @@
     "id": "PLL01",
     "group": "PLL",
     "name": "Aa",
-    "image": "/pll/PLL01.png",
+    "image": "/pll/PLL01.svg",
     "algorithms": ["x L2 D2 L' U' L D2 L' U L'"],
     "tags": ["corner"]
   },
@@ -11,7 +11,7 @@
     "id": "PLL02",
     "group": "PLL",
     "name": "Ab",
-    "image": "/pll/PLL02.png",
+    "image": "/pll/PLL02.svg",
     "algorithms": ["x' L2 D2 L U L' D2 L U' L"],
     "tags": ["corner"]
   },
@@ -19,7 +19,7 @@
     "id": "PLL03",
     "group": "PLL",
     "name": "F",
-    "image": "/pll/PLL03.png",
+    "image": "/pll/PLL03.svg",
     "algorithms": ["R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R"],
     "tags": ["corner"]
   },
@@ -27,7 +27,7 @@
     "id": "PLL04",
     "group": "PLL",
     "name": "Ga",
-    "image": "/pll/PLL04.png",
+    "image": "/pll/PLL04.svg",
     "algorithms": ["R2 U R' U R' U' R U' R2 U' D R' U R D'"],
     "tags": ["corner"]
   },
@@ -35,7 +35,7 @@
     "id": "PLL05",
     "group": "PLL",
     "name": "Gb",
-    "image": "/pll/PLL05.png",
+    "image": "/pll/PLL05.svg",
     "algorithms": ["R' U' R U D' R2 U R' U R U' R U' R2 D"],
     "tags": ["corner"]
   },
@@ -43,7 +43,7 @@
     "id": "PLL06",
     "group": "PLL",
     "name": "Gc",
-    "image": "/pll/PLL06.png",
+    "image": "/pll/PLL06.svg",
     "algorithms": ["R2 U' R U' R U R' U R2 U D' R U' R' D"],
     "tags": ["corner"]
   },
@@ -51,7 +51,7 @@
     "id": "PLL07",
     "group": "PLL",
     "name": "Gd",
-    "image": "/pll/PLL07.png",
+    "image": "/pll/PLL07.svg",
     "algorithms": ["R U R' U' D R2 U' R U' R' U R' U R2 D'"],
     "tags": ["corner"]
   },
@@ -59,7 +59,7 @@
     "id": "PLL08",
     "group": "PLL",
     "name": "Ja",
-    "image": "/pll/PLL08.png",
+    "image": "/pll/PLL08.svg",
     "algorithms": ["x R2 F R F' R U2 r' U r U2"],
     "tags": ["corner"]
   },
@@ -67,7 +67,7 @@
     "id": "PLL09",
     "group": "PLL",
     "name": "Jb",
-    "image": "/pll/PLL09.png",
+    "image": "/pll/PLL09.svg",
     "algorithms": ["R U R' F' R U R' U' R' F R2 U' R'"],
     "tags": ["corner"]
   },
@@ -75,7 +75,7 @@
     "id": "PLL10",
     "group": "PLL",
     "name": "Ra",
-    "image": "/pll/PLL10.png",
+    "image": "/pll/PLL10.svg",
     "algorithms": ["R U' R' U' R U R D R' U' R D' R' U2 R'"],
     "tags": ["corner"]
   },
@@ -83,7 +83,7 @@
     "id": "PLL11",
     "group": "PLL",
     "name": "Rb",
-    "image": "/pll/PLL11.png",
+    "image": "/pll/PLL11.svg",
     "algorithms": ["R2 F R U R U' R' F' R U2 R' U2 R"],
     "tags": ["corner"]
   },
@@ -91,7 +91,7 @@
     "id": "PLL12",
     "group": "PLL",
     "name": "T",
-    "image": "/pll/PLL12.png",
+    "image": "/pll/PLL12.svg",
     "algorithms": ["R U R' U' R' F R2 U' R' U' R U R' F'"],
     "tags": ["corner"]
   },
@@ -99,7 +99,7 @@
     "id": "PLL13",
     "group": "PLL",
     "name": "E",
-    "image": "/pll/PLL13.png",
+    "image": "/pll/PLL13.svg",
     "algorithms": ["x' L' U L D' L' U' L D L' U' L D' L' U L D"],
     "tags": ["diagonal"]
   },
@@ -107,7 +107,7 @@
     "id": "PLL14",
     "group": "PLL",
     "name": "Na",
-    "image": "/pll/PLL14.png",
+    "image": "/pll/PLL14.svg",
     "algorithms": ["R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'"],
     "tags": ["diagonal"]
   },
@@ -115,7 +115,7 @@
     "id": "PLL15",
     "group": "PLL",
     "name": "Nb",
-    "image": "/pll/PLL15.png",
+    "image": "/pll/PLL15.svg",
     "algorithms": ["R' U R U' R' F' U' F R U R' F R' F' R U' R"],
     "tags": ["diagonal"]
   },
@@ -123,7 +123,7 @@
     "id": "PLL16",
     "group": "PLL",
     "name": "V",
-    "image": "/pll/PLL16.png",
+    "image": "/pll/PLL16.svg",
     "algorithms": ["R' U R' U' y R' F' R2 U' R' U R' F R F"],
     "tags": ["diagonal"]
   },
@@ -131,7 +131,7 @@
     "id": "PLL17",
     "group": "PLL",
     "name": "Y",
-    "image": "/pll/PLL17.png",
+    "image": "/pll/PLL17.svg",
     "algorithms": ["F R U' R' U' R U R' F' R U R' U' R' F R F'"],
     "tags": ["diagonal"]
   },
@@ -139,7 +139,7 @@
     "id": "PLL18",
     "group": "PLL",
     "name": "H",
-    "image": "/pll/PLL18.png",
+    "image": "/pll/PLL18.svg",
     "algorithms": ["M2 U M2 U2 M2 U M2"],
     "tags": ["edges"]
   },
@@ -147,7 +147,7 @@
     "id": "PLL19",
     "group": "PLL",
     "name": "Ua",
-    "image": "/pll/PLL19.png",
+    "image": "/pll/PLL19.svg",
     "algorithms": ["M2 U M U2 M' U M2"],
     "tags": ["edges"]
   },
@@ -155,7 +155,7 @@
     "id": "PLL20",
     "group": "PLL",
     "name": "Ub",
-    "image": "/pll/PLL20.png",
+    "image": "/pll/PLL20.svg",
     "algorithms": ["M2 U' M U2 M' U' M2"],
     "tags": ["edges"]
   },
@@ -163,7 +163,7 @@
     "id": "PLL21",
     "group": "PLL",
     "name": "Z",
-    "image": "/pll/PLL21.png",
+    "image": "/pll/PLL21.svg",
     "algorithms": ["M' U M2 U M2 U M' U2 M2"],
     "tags": ["edges"]
   }

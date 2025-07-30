@@ -3,6 +3,7 @@ import CaseImage from "../../components/trainer/CaseImage";
 import TrainerFilters from "../../components/trainer/TrainerFilters";
 import VoiceToggle from "../../components/trainer/VoiceToggle";
 import { Header } from "../../components/Header";
+import { useVoice } from "../../hooks/useVoice";
 
 // Import CFOP data
 import { ollCases, pllCases, f2lCases, CFOPCase } from "../../lib/cfopData";
@@ -18,7 +19,9 @@ export default function TrainerPage() {
   const [currentCase, setCurrentCase] = useState<CFOPCase | null>(null);
   const [showAlgorithm, setShowAlgorithm] = useState<boolean>(false);
   const [selectedAlgorithm, setSelectedAlgorithm] = useState<number>(0);
-  const [isVoiceEnabled, setIsVoiceEnabled] = useState<boolean>(false);
+  
+  // Use the improved voice hook
+  const { enabled: isVoiceEnabled, toggle: toggleVoice, speakCaseWithName, speakAlgorithmText } = useVoice();
 
   // Load cases for selected group
   const cases = cfopData[selectedGroup] || [];
@@ -32,13 +35,8 @@ export default function TrainerPage() {
     setShowAlgorithm(false);
     setSelectedAlgorithm(0);
     
-    // Voice announcement
-    if (isVoiceEnabled && 'speechSynthesis' in window) {
-      const utterance = new SpeechSynthesisUtterance(`${selectedGroup} case: ${newCase.name}`);
-      utterance.rate = 0.8;
-      utterance.pitch = 1;
-      speechSynthesis.speak(utterance);
-    }
+    // Voice announcement with improved pronunciation 
+    speakCaseWithName(newCase.name, selectedGroup);
   };
 
   // Initialize with first case
@@ -56,12 +54,17 @@ export default function TrainerPage() {
   const handleShowAlgorithm = () => {
     setShowAlgorithm(true);
     
-    // Voice announcement of algorithm
-    if (isVoiceEnabled && currentCase && 'speechSynthesis' in window) {
+    // Voice announcement of algorithm with improved pronunciation
+    if (currentCase) {
       const algorithm = currentCase.algorithms[selectedAlgorithm];
-      const utterance = new SpeechSynthesisUtterance(`Algorithm: ${algorithm.replace(/'/g, 'prime').replace(/2/g, 'double')}`);
-      utterance.rate = 0.7;
-      speechSynthesis.speak(utterance);
+      speakAlgorithmText(algorithm);
+    }
+  };
+
+  const handleRepeatAlgorithm = () => {
+    if (currentCase) {
+      const algorithm = currentCase.algorithms[selectedAlgorithm];
+      speakAlgorithmText(algorithm);
     }
   };
 
@@ -96,7 +99,7 @@ export default function TrainerPage() {
                 <h3 className="text-lg font-semibold">Voice Guide</h3>
                 <VoiceToggle 
                   isEnabled={isVoiceEnabled}
-                  onToggle={setIsVoiceEnabled}
+                  onToggle={toggleVoice}
                 />
               </div>
               <p className="text-sm text-gray-600 dark:text-gray-400">
@@ -181,7 +184,7 @@ export default function TrainerPage() {
                           </button>
                           {isVoiceEnabled && (
                             <button
-                              onClick={handleShowAlgorithm}
+                              onClick={handleRepeatAlgorithm}
                               className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
                             >
                               🔊 Repeat
