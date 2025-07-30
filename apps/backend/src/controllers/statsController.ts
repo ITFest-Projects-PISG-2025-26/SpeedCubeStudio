@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { PrismaClient, Solve } from '@prisma/client';
+import { PrismaClient } from '@prisma/client';
 import { calculateStats } from '../utils/stats';
 
 interface AuthenticatedRequest extends Request {
@@ -7,6 +7,15 @@ interface AuthenticatedRequest extends Request {
 }
 
 const prisma = new PrismaClient();
+
+type Solve = {
+  id: string;
+  time: number;
+  penalty: string | null;
+  scramble: string;
+  userId: string;
+  createdAt: Date;
+};
 
 export const getStats = async (req: AuthenticatedRequest, res: Response) => {
   const userId = (req as any).user.userId;
