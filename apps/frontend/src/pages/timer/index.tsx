@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import dynamic from 'next/dynamic';
 import { Header } from "../../components/Header";
 import { useSolveStore } from "../../lib/store";
@@ -78,7 +78,7 @@ export default function TimerPage() {
     }
   };
 
-  const handleKeyDown = (e: KeyboardEvent) => {
+  const handleKeyDown = useCallback((e: KeyboardEvent) => {
     if (e.code === 'Space') {
       e.preventDefault();
       
@@ -104,9 +104,9 @@ export default function TimerPage() {
       e.preventDefault();
       generateNewScramble();
     }
-  };
+  }, [isTimerRunning, isReady, spacePressed]);
 
-  const handleKeyUp = (e: KeyboardEvent) => {
+  const handleKeyUp = useCallback((e: KeyboardEvent) => {
     if (e.code === 'Space' && !isTimerRunning && !isReady) {
       setSpacePressed(false);
       if (readyTimeoutRef.current) {
@@ -114,7 +114,7 @@ export default function TimerPage() {
         readyTimeoutRef.current = null;
       }
     }
-  };
+  }, [isTimerRunning, isReady]);
 
   useEffect(() => {
     window.addEventListener('keydown', handleKeyDown);
@@ -130,7 +130,7 @@ export default function TimerPage() {
         clearTimeout(readyTimeoutRef.current);
       }
     };
-  }, [isTimerRunning, isReady, spacePressed, scramble]);
+  }, [handleKeyDown, handleKeyUp]);
 
   const getTimerColor = () => {
     if (isTimerRunning) return 'text-red-500';
