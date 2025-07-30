@@ -15,7 +15,7 @@
   },
   "scripts": {
     "dev": "turbo run dev",
-    "build": "npm install && cd apps/backend && npm install && npm install @prisma/client prisma && npx prisma generate && npm run build",
+    "build": "cd apps/backend && npm install && npx prisma generate && npm run build",
     "lint": "turbo run lint",
     "build:backend": "cd apps/backend && npm install && npx prisma generate && npm run build",
     "build:frontend": "cd apps/frontend && npm run build",

@@ -1,16 +1,21 @@
 #!/bin/bash
+set -e
 
-# Install root dependencies
-npm install
+echo "Starting backend build process..."
+
+# Navigate to backend directory
+cd apps/backend
 
 # Install backend dependencies
-cd apps/backend
+echo "Installing backend dependencies..."
 npm install
 
 # Generate Prisma client
+echo "Generating Prisma client..."
 npx prisma generate
 
-# Build backend
+# Build TypeScript
+echo "Building TypeScript..."
 npm run build
 
-echo "Build completed successfully!"
+echo "Backend build completed successfully!"
